@@ -23,12 +23,33 @@ username = ""
 phone = ""
 identity = ""
 
+token = ''
 class EmployeesTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("人员测试开始")
+        #      获取token
+        url = "http://125.94.39.168:8888/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou6605"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_employees_post(self):
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/employees"
         num1 = random.randint(1000, 9999)
         global username
@@ -69,7 +90,7 @@ class EmployeesTest(unittest.TestCase):
               "identity": identity,
 
               "name": "张三",
-              "password": "admin",
+              "password": "123456",
               "postId": 2,
               "roles": [
                 1
@@ -79,8 +100,10 @@ class EmployeesTest(unittest.TestCase):
          }
         headers = {
              'accept': '*/*',
-             'Content-Type': 'application/json'
-         }
+             'Content-Type': 'application/json',
+             "Authorization": "Bearer " + token
+        }
+        print(headers)
         response = requests.post(url, '', json=body, headers=headers)
         print(url)
         print(response.status_code)
@@ -97,6 +120,7 @@ class EmployeesTest(unittest.TestCase):
         global username
         global phone
         global identity
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/employees" + "/" + str(postid)
         body = {
             "address": {
@@ -132,7 +156,8 @@ class EmployeesTest(unittest.TestCase):
         }
         headers = {
             'accept': '*/*',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response2 = requests.put(url, json=body, headers=headers)
         print(response2.url)
@@ -144,10 +169,12 @@ class EmployeesTest(unittest.TestCase):
 
 
     def test_employees_delete(self):
+        global token
         global postid
         url = os.path.join("http://125.94.39.168:8888/api/employees"+"/"+str(postid))
         headers = {
-             'accept': '*/*'
+             'accept': '*/*',
+            "Authorization": "Bearer " + token
         }
         response2 = requests.delete(url, headers=headers)
         print(url)
@@ -158,9 +185,11 @@ class EmployeesTest(unittest.TestCase):
 
     # 分页查询
     def test_employees_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/employees"
         headers = {
-            'accept': '*/*'
+            'accept': '*/*',
+            "Authorization": "Bearer " + token
         }
         params = {
             "page": 1,
@@ -174,7 +203,7 @@ class EmployeesTest(unittest.TestCase):
 
     @classmethod
     def tearDown(self):
-            print(u"自动测试完毕！")
+       print(u"自动测试完毕！")
 
 
 # 运行单个python文件会需要

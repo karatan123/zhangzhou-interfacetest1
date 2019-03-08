@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98804351-de40-42ae-807f-183869c6abf3" name="Default" comment="" />
+    <list default="true" id="98804351-de40-42ae-807f-183869c6abf3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_case_handsetadmin/test_auth1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/runtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_collectionplans.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_collectionplans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_collectionroutes.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_collectionroutes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_collectiontask.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_collectiontask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_customers.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_customers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_employees1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_employees1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_backend/test_vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_backend/test_vehicles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_customers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_destricts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_handsetadmin/test_destricts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_employees.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case_handsetadmin/test_employees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case_handsetadmin/test_vehicles.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +33,8 @@
       <file leaf-file-name="runtest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+            <state relative-caret-position="284">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="e#77#92#0" expanded="true" />
               </folding>
@@ -23,68 +42,59 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fileoperation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fileoperation.py">
+      <file leaf-file-name="test_RFID.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="310">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_customertypes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="45" column="21" selection-start-line="45" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_customers1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customers1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-290">
+              <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#140#155#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_collectionplans.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectionplans.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result_2019-01-04-16-19-20.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/result_2019-01-04-16-19-20.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="result_2019-01-03-16-59-06.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report/result_2019-01-03-16-59-06.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4266" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_database.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_database.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
-              <folding>
-                <element signature="e#20#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="53" selection-start-line="53" selection-end-line="62" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cursors.py" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/cursors.py">
+      <file leaf-file-name="encoder.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.7/site-packages/requests_toolbelt/multipart/encoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="136" column="54" selection-start-line="135" selection-start-column="11" selection-end-line="136" selection-end-column="54" />
+            <state relative-caret-position="107">
+              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case_backend/random1.py">
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.7/site-packages/requests/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="71">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
@@ -92,17 +102,26 @@
       <file leaf-file-name="test_appversionmanagement.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="16" column="10" selection-start-line="16" selection-end-line="17" />
+            <state relative-caret-position="296">
+              <caret line="70" column="32" selection-start-line="70" selection-end-line="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connections.py" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/connections.py">
+      <file leaf-file-name="test_vehicles1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_vehicles1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_customers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case_backend/test_customers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-935">
+              <caret line="132" column="32" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -121,7 +140,11 @@
       <find>kwargs</find>
       <find>request</find>
       <find>body</find>
+      <find>http://125.94.39.168:7777/api/customers/201225/images</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -134,26 +157,33 @@
         <option value="$PROJECT_DIR$/test_case/test_vehicles.py" />
         <option value="$PROJECT_DIR$/test_case/test_appversionmanagement.py" />
         <option value="$PROJECT_DIR$/test_case/test_customers.py" />
+        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_customers.py" />
+        <option value="$PROJECT_DIR$/test_database.py" />
+        <option value="$PROJECT_DIR$/venv/fileoperation.py" />
+        <option value="$PROJECT_DIR$/fileoperation.py" />
+        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_vehicles.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_employees1.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_vehicles.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_customers.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_collectionplans.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_collectionroutes.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_collectiontask.py" />
+        <option value="$PROJECT_DIR$/test_case_backend/test_auth.py" />
+        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_auth1.py" />
         <option value="$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py" />
         <option value="$PROJECT_DIR$/test_case_handsetadmin/test_destricts.py" />
         <option value="$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py" />
         <option value="$PROJECT_DIR$/test_case_handsetadmin/test_employees.py" />
-        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_vehicles.py" />
-        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_customers.py" />
-        <option value="$PROJECT_DIR$/test_case_backend/test_collectionplans.py" />
-        <option value="$PROJECT_DIR$/test_case_backend/test_customers.py" />
-        <option value="$PROJECT_DIR$/test_case_backend/test_collectiontask.py" />
-        <option value="$PROJECT_DIR$/test_case_backend/test_collectionroutes.py" />
-        <option value="$PROJECT_DIR$/test_database.py" />
-        <option value="$PROJECT_DIR$/venv/fileoperation.py" />
+        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_vehicles1.py" />
         <option value="$PROJECT_DIR$/runtest.py" />
-        <option value="$PROJECT_DIR$/fileoperation.py" />
+        <option value="$PROJECT_DIR$/test_case_handsetadmin/test_customers1.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="23" />
+    <option name="x" value="74" />
+    <option name="y" value="46" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
@@ -162,37 +192,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="interfaceTest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interfaceTest2" type="462c0819:PsiDirectoryNode" />
+              <item name="zhangzhou-interfacetest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhangzhou-interfacetest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="interfaceTest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interfaceTest2" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interfaceTest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interfaceTest2" type="462c0819:PsiDirectoryNode" />
+              <item name="zhangzhou-interfacetest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhangzhou-interfacetest" type="462c0819:PsiDirectoryNode" />
               <item name="test_case_backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="interfaceTest2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interfaceTest2" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="zhangzhou-interfacetest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhangzhou-interfacetest" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case_handsetadmin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="cursor&#9;null&#9;null&#10;cursor.execute&#9;null&#9;null&#10;cursor.execute()&#9;null&#9;null&#10;pymysql&#9;FILE&#9;jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql&#10;request&#9;null&#9;null&#10;MultipartEncoder&#9;null&#9;null&#10;PushbackInputStream&#9;null&#9;null&#10;api&#9;FILE&#9;file:///usr/local/lib/python3.7/site-packages/requests/api.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -226,42 +252,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="fileoperation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="interfaceTest2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fileoperation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="fileoperation" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="interfaceTest2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/fileoperation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="runtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="interfaceTest2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,7 +270,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_collectiontask" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_RFID" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="interfaceTest2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,17 +278,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case_backend" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case_handsetadmin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case_backend/test_collectiontask.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test_database" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_customers1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="interfaceTest2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,11 +296,47 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case_handsetadmin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_database.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case_handsetadmin/test_customers1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_customertypes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="interfaceTest2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case_handsetadmin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_vehicles1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="interfaceTest2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case_handsetadmin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case_handsetadmin/test_vehicles1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,18 +344,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.runtest" />
-      <item itemvalue="Python.test_collectiontask" />
-      <item itemvalue="Python.test_database" />
-      <item itemvalue="Python.fileoperation" />
-      <item itemvalue="Python.fileoperation (1)" />
+      <item itemvalue="Python.test_RFID" />
+      <item itemvalue="Python.test_customertypes" />
+      <item itemvalue="Python.test_vehicles1" />
+      <item itemvalue="Python.test_customers1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.runtest" />
-        <item itemvalue="Python.fileoperation (1)" />
-        <item itemvalue="Python.fileoperation" />
-        <item itemvalue="Python.test_database" />
-        <item itemvalue="Python.test_collectiontask" />
+        <item itemvalue="Python.test_customers1" />
+        <item itemvalue="Python.test_customertypes" />
+        <item itemvalue="Python.test_vehicles1" />
+        <item itemvalue="Python.test_RFID" />
       </list>
     </recent_temporary>
   </component>
@@ -347,14 +373,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="251" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="74" y="46" width="1280" height="773" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3288889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3288889" />
@@ -407,7 +432,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -427,11 +452,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_case/test_customers.py" />
-    <entry file="file://$PROJECT_DIR$/runtest.py">
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectionplans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="3960">
+          <caret line="272" column="7" selection-start-line="272" selection-start-column="7" selection-end-line="272" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -449,19 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#25#189#1" />
-            <element signature="e#256#2714#1" />
-            <element signature="e#2720#2794#0" />
-            <element signature="e#3072#3426#1" />
-            <element signature="e#3565#3898#0" />
-            <element signature="e#3565#3805#1" />
-            <element signature="e#3930#4257#0" />
-            <element signature="e#3930#4166#1" />
-            <element signature="e#4873#5327#1" />
-            <element signature="e#5424#5880#1" />
-            <element signature="e#5969#6207#1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,19 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="119" column="4" lean-forward="true" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="4" />
-          <folding>
-            <element signature="e#25#189#1" />
-            <element signature="e#256#2714#1" />
-            <element signature="e#2720#2794#0" />
-            <element signature="e#3072#3426#1" />
-            <element signature="e#3565#3898#0" />
-            <element signature="e#3565#3805#1" />
-            <element signature="e#3930#4257#0" />
-            <element signature="e#3930#4166#1" />
-            <element signature="e#4873#5327#1" />
-            <element signature="e#5424#5880#1" />
-            <element signature="e#5969#6207#1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,229 +531,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/requests_toolbelt/multipart/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_vehicles.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_auth.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_employees1.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_appversionmanagement.py" />
     <entry file="file://$PROJECT_DIR$/test_case/test_customers.py" />
     <entry file="file://$PROJECT_DIR$/test_case/random1.py" />
-    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_destricts.py">
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customers.py" />
+    <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="1380">
+          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/test_auth.py">
+    <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="136" column="54" selection-start-line="135" selection-start-column="11" selection-end-line="136" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/fileoperation.py" />
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_vehicles.py" />
+    <entry file="file://$PROJECT_DIR$/test_case_backend/random1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="54" selection-end-column="19" />
+          <caret selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/requests/api.py">
+    <entry file="file://$PROJECT_DIR$/fileoperation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="111" column="48" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
-          <folding>
-            <element signature="e#25#189#1" />
-            <element signature="e#256#2714#1" />
-            <element signature="e#2720#2794#0" />
-            <element signature="e#3072#3426#1" />
-            <element signature="e#3565#3898#0" />
-            <element signature="e#3565#3805#1" />
-            <element signature="e#3930#4257#0" />
-            <element signature="e#3930#4166#1" />
-            <element signature="e#4873#5327#1" />
-            <element signature="e#5424#5880#1" />
-            <element signature="e#5969#6207#1" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_vehicles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectionroutes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="e#140#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="163" column="41" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectiontask.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="52" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-          <folding>
-            <element signature="e#140#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/test_customers.py">
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectionplans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
+        <state relative-caret-position="320">
+          <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-end-line="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case_backend/test_employees1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1425">
+          <caret line="103" column="22" selection-start-line="103" selection-end-line="104" />
           <folding>
             <element signature="e#214#229#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/test_vehicles.py">
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_auth.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
-          <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="62" selection-end-column="52" />
+          <caret line="59" selection-start-line="59" selection-end-line="61" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py">
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_auth1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#140#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customers.py">
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_destricts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
-          <folding>
-            <element signature="e#140#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_employees.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="52" />
-          <folding>
-            <element signature="e#141#156#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="43">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_vehicles.py">
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customertypes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="e#141#156#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="511">
+          <caret line="45" column="21" selection-start-line="45" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py">
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_customers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#140#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-935">
+          <caret line="132" column="32" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/connections.py">
+    <entry file="file:///usr/local/lib/python3.7/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="116" column="5" selection-start-line="116" selection-start-column="5" selection-end-line="116" selection-end-column="5" />
+        <state relative-caret-position="71">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/random1.py">
+    <entry file="file:///usr/local/lib/python3.7/site-packages/requests_toolbelt/multipart/encoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="107">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/lib/python3.7/site-packages/PyMySQL-0.9.3-py3.7.egg!/pymysql/cursors.py">
+    <entry file="file://$PROJECT_DIR$/test_database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="136" column="54" selection-start-line="135" selection-start-column="11" selection-end-line="136" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/result_2019-01-03-16-59-06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4266" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report/result_2019-01-04-16-19-20.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/fileoperation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" column="22" lean-forward="true" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="16" column="10" selection-start-line="16" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case_backend/test_collectionplans.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="53" selection-start-line="53" selection-end-line="62" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+        <state relative-caret-position="284">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="e#77#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fileoperation.py">
+    <entry file="file://$PROJECT_DIR$/test_case_backend/test_appversionmanagement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="296">
+          <caret line="70" column="32" selection-start-line="70" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_customers1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#140#155#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_database.py">
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_RFID.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="e#20#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="310">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case_handsetadmin/test_vehicles1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="74" column="39" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
         </state>
       </provider>
     </entry>

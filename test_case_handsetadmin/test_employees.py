@@ -19,15 +19,36 @@ class EmployeesTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("手持机管理员工测试开始")
+        #     获取权限
+        url = "http://recycling.3po-dwm.com:7777/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou1012"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_employees_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/employees"
         params = {
             "page": 1,
             "size": 20
         }
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response = requests.get(url, params=params, headers=headers)
         print(response.url)
@@ -37,9 +58,11 @@ class EmployeesTest(unittest.TestCase):
 
     # 绑卡
     def test_employees_RFID_post(self):
-        url = "http://recycling.3po-dwm.com:7777/api/employees" +"/" +"123515" + "/rfids/" + "1206659881"
+        global token
+        url = "http://recycling.3po-dwm.com:7777/api/employees/" + "123514" + "/rfids/" + "3956043074" + "/00000"
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response1 = requests.post(url, '', '', headers=headers)
         print(response1.url)
@@ -49,9 +72,11 @@ class EmployeesTest(unittest.TestCase):
 
     # 解绑
     def test_employees_RFID_delete(self):
-        url = "http://recycling.3po-dwm.com:7777/api/employees" +"/" +"123515" + "/rfids/" + "1206659881"
+        global token
+        url = "http://recycling.3po-dwm.com:7777/api/employees" +"/" +"123514" + "/rfids/" + "3956043074"
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response2 = requests.delete(url, headers=headers)
         print(response2.url)

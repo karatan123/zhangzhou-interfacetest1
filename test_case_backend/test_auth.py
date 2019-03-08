@@ -13,7 +13,7 @@ import traceback
 import requests
 import time
 
-
+token = ''
 class AuthTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -34,11 +34,18 @@ class AuthTest(unittest.TestCase):
         print(response.headers)
         print(response.json())
         self.assertEqual(response.status_code, 200)
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_auth_get(self):
+        global token
         url = "http://125.94.39.168:8888/api/refresh"
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response = requests.request("GET", url, headers=headers)
         print(response.status_code)
@@ -48,7 +55,7 @@ class AuthTest(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-            print(u"自动测试完毕！")
+            print(u"权限测试完毕！")
 
 # 运行单个python文件会需要
 if __name__ == "__main__":

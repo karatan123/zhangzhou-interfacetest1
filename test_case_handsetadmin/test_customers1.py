@@ -16,20 +16,41 @@ from requests_toolbelt import MultipartEncoder
 
 
 postid = 0
-
-class CustomersTest(unittest.TestCase):
+token = ''
+class CustomersTest1(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("手持机管理收运单位测试开始")
+        #     获取权限
+        url = "http://recycling.3po-dwm.com:7777/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou1012"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_customers_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/customers"
         params = {
             "page": 1,
             "size": 20
         }
         headers = {
-           'accept': 'application/json'
+           'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response = requests.get(url, params=params, headers=headers)
         print(response.url)
@@ -39,6 +60,7 @@ class CustomersTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_customers_post(self):
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/customers"
         body = {
                 "address": {
@@ -61,7 +83,8 @@ class CustomersTest(unittest.TestCase):
          }
         headers = {
             'accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response1 = requests.post(url, '', json=body, headers=headers)
         print(response1.url)
@@ -77,9 +100,11 @@ class CustomersTest(unittest.TestCase):
 
     # 根据收运单位 id 查询收运单位信息
     def test_customers_id_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/customers" + "/" + str(postid)
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response2 = requests.get(url, '', headers=headers)
         print(response2.url)
@@ -90,7 +115,8 @@ class CustomersTest(unittest.TestCase):
 
     def test_customers_put(self):
         global postid
-        url = "http://125.94.39.168:8888/api/customers" + "/" + str(postid)
+        global token
+        url = "http://125.94.39.168:7777/api/customers" + "/" + str(postid)
         body = {
             "address": {
                  "cityCode": 350600,
@@ -104,7 +130,7 @@ class CustomersTest(unittest.TestCase):
             "category": "Separate",
             "customerList": [
                {
-                "id": 0,
+                "id": postid+1,
                 "name": "御品牛肉123"
               }
              ],
@@ -117,7 +143,8 @@ class CustomersTest(unittest.TestCase):
          }
         headers = {
             'accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response3 =requests.put(url, json=body, headers=headers)
         print(response3.url)
@@ -129,9 +156,11 @@ class CustomersTest(unittest.TestCase):
         # 收运单位绑卡
     def test_customers_RFID_post(self):
         global postid
-        url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid + 1) + "/rfids/" + "1206137545"
+        global token
+        url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid + 1) + "/rfids/" + "659670805" + "/00000"
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response5 = requests.post(url, '', '', headers=headers)
         print(response5.url)
@@ -143,9 +172,11 @@ class CustomersTest(unittest.TestCase):
     # 收运单位解绑
     def test_customers_RFID_delete(self):
         global postid
-        url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid + 1) + "/rfids/" + "1206137545"
+        global token
+        url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid + 1) + "/rfids/" + "659670805"
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response6 = requests.delete(url, headers=headers)
         print(response6.url)
@@ -156,11 +187,15 @@ class CustomersTest(unittest.TestCase):
 
     # 上传收运单位或聚类点的图片
     def test_customers_uploadimages_post(self):
+        global token
         global postid
-        url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid) + "/images"
+        # url = "http://recycling.3po-dwm.com:7777/api/customers/" + str(postid) + "/images"
+        url = "http://125.94.39.168:7777/api/customers/201225/images"
         headers = {
             'accept': 'application/json',
-            'Content-Type': "multipart/form-data"
+            'Content-Type': "multipart/form-data; boundary=----WebKitFormBoundaryFsbnOAOXweGMsjT3",
+            # 'Content-Type': "application / octet - stream",
+            "Authorization": "Bearer " + token
         }
         # 创建form data形式数据  主要是针对上传文件
         multipart_encoder = MultipartEncoder(
@@ -168,13 +203,12 @@ class CustomersTest(unittest.TestCase):
                 # 这里根据服务器需要的参数格式进行修改
                 # "description": u"测试数据",
                 # "version": 0.1,
-                'images': [
-                    ('dashboard.png', open('Users/kara/Desktop/dashboard.png', 'rb')),
-                    ('customersadd.png', open('/Users/kara/Desktop/customersadd.png', 'rb'))
-                 ]
+                'images': ('dashboard.png', open('/Users/kara/dashboard.png', 'rb'), 'image/png')
             },
+
         )
         response7 = requests.post(url, data=multipart_encoder, headers=headers)
+        print(url)
         print(response7.status_code)
         print(response7.headers)
         print(response7.json())
@@ -182,9 +216,11 @@ class CustomersTest(unittest.TestCase):
 
     def test_customers_delete(self):
         global postid
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/customers" + "/" + str(postid)
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response4 = requests.delete(url, headers=headers)
         print(response4.url)

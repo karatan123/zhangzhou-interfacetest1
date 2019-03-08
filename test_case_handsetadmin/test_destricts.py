@@ -13,20 +13,41 @@ import traceback
 import requests
 import time
 
-
+token = ''
 class DestrictsTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("行政区测试开始")
+        #     获取权限
+        url = "http://recycling.3po-dwm.com:7777/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou1012"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_destricts_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:7777/api/districts"
         params = {
             "code": "350600",
             "subdistrict": 1
         }
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response = requests.get(url, params=params, headers=headers)
         print(response.url)

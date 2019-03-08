@@ -13,20 +13,42 @@ import traceback
 import requests
 import time
 
+token = ''
 postid = 0
 class CustomersTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("收运单位测试开始")
+        #      获取token
+        url = "http://125.94.39.168:8888/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou6605"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_customers_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/customers"
         params = {
             "page": 1,
             "size": 20
         }
         headers = {
-           'accept': 'application/json'
+           'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response = requests.get(url, params=params, headers=headers)
         print(response.url)
@@ -36,6 +58,7 @@ class CustomersTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_customers_post(self):
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/customers"
         body = {
             "address": {
@@ -78,7 +101,8 @@ class CustomersTest(unittest.TestCase):
          }
         headers = {
             'accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response1 = requests.post(url, '', json=body, headers=headers)
         print(response1.url)
@@ -93,6 +117,7 @@ class CustomersTest(unittest.TestCase):
         print(postid)
 
     def test_customers_put(self):
+        global token
         global postid
         url = "http://125.94.39.168:8888/api/customers" + "/" + str(postid)
         body = {
@@ -137,7 +162,8 @@ class CustomersTest(unittest.TestCase):
          }
         headers = {
             'accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response3 =requests.put(url, json=body, headers=headers)
         print(response3.url)
@@ -148,6 +174,7 @@ class CustomersTest(unittest.TestCase):
 
     # 添加子收运点
     def test_customers_separatepost(self):
+        global token
         global postid
         url = "http://125.94.39.168:8888/api/customers" + "/" + str(postid)
         body = [
@@ -157,7 +184,8 @@ class CustomersTest(unittest.TestCase):
          ]
         headers = {
             'accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response5 = requests.post(url, '', json=body, headers=headers)
         print(response5.url)
@@ -167,10 +195,12 @@ class CustomersTest(unittest.TestCase):
         self.assertEqual(response5.status_code, 200)
 
     def test_customer_delete(self):
+        global token
         global postid
         url = "http://125.94.39.168:8888/api/customers" + "/" + str(postid)
         headers = {
-            'accept': 'application/json'
+            'accept': 'application/json',
+            "Authorization": "Bearer " + token
         }
         response4 = requests.delete(url, headers=headers)
         print(response4.url)

@@ -17,14 +17,34 @@ from urllib import request
 from urllib import parse
 from urllib.request import urlopen
 
-
+token = ''
 
 class AppversionmanagementTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         print("app管理测试开始")
+        #      获取token
+        url = "http://125.94.39.168:8888/api/auth"
+        body = {
+            "password": "123456",
+            "username": "zhangzhou6605"
+        }
+        headers = {
+            'accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+        response = requests.post(url, '', body, headers=headers)
+        print(response.status_code)
+        print(response.headers)
+        print(response.json())
+        #   正则提取需要的token值
+        global token
+        s1 = response.json()
+        token = s1["data"]["token"]
+        print(token)
 
     def test_appversionmanangement_post(self):
+        global token
         values={}
         values['version'] = 3.3
         values['description'] = "测试数据"
@@ -48,7 +68,8 @@ class AppversionmanagementTest(unittest.TestCase):
 
         headers = {
            'accept': '*/*',
-           'Content-Type': "multipart/form-data; boundary=----WebKitFormBoundaryFsbnOAOXweGMsjT3"
+           'Content-Type': "multipart/form-data; boundary=----WebKitFormBoundaryFsbnOAOXweGMsjT3",
+           "Authorization": "Bearer " + token
         }
         response = requests.post(url, data=multipart_encoder, headers=headers)
         print(response.status_code)
@@ -57,9 +78,11 @@ class AppversionmanagementTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_appversionmanagement_get(self):
+        global token
         url = "http://recycling.3po-dwm.com:8888/api/apps/latest"
         headers = {
-            'accept': '*/*'
+            'accept': '*/*',
+            "Authorization": "Bearer " + token
         }
         response1 = requests.get(url, None, headers=headers)
         print(response1.status_code)
