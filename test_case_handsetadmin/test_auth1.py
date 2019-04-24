@@ -55,7 +55,7 @@ class Auth1Test(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-            print(u"权限测试完毕！")
+            print(u"手持管理端权限测试完毕！")
 
 # 运行单个python文件会需要
 if __name__ == "__main__":

@@ -125,7 +125,7 @@ class CollectiontaskTest(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-            print(u"自动测试完毕！")
+            print(u"后端收运请求测试完毕！")
 
 # 运行单个python文件会需要
 if __name__ == "__main__":

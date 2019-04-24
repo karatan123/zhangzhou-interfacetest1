@@ -203,7 +203,7 @@ class EmployeesTest(unittest.TestCase):
 
     @classmethod
     def tearDown(self):
-       print(u"自动测试完毕！")
+       print(u"人员测试完毕！")
 
 
 # 运行单个python文件会需要

@@ -15,6 +15,12 @@ from test_case_backend import test_customers
 from test_case_backend import test_collectionplans
 from test_case_backend import test_collectionroutes
 from  test_case_backend import test_collectiontask
+from test_case_backend import test_customertypes1
+from test_case_backend import test_destricts1
+from test_case_backend import test_planreports
+from test_case_backend import test_vehiclemaintenance
+from test_case_backend import test_vehicleupkeep
+from test_case_backend import test_reportvehicleinspection
 
 from test_case_handsetadmin import test_auth1
 from test_case_handsetadmin import test_RFID
@@ -23,6 +29,13 @@ from test_case_handsetadmin import test_destricts
 from test_case_handsetadmin import test_employees
 from test_case_handsetadmin import test_vehicles1
 from test_case_handsetadmin import test_customers1
+
+
+
+from test_case_vehiclecollection import test_auth2
+from test_case_vehiclecollection import test_fuelrecord
+from test_case_vehiclecollection import test_vehicleinspection
+
 
 
 
@@ -77,7 +90,28 @@ suite.addTest(test_collectionroutes.CollectionroutesTest('test_collectionroutes_
 suite.addTest(test_collectiontask.CollectiontaskTest('test_collectiontask_get'))
 suite.addTest(test_collectiontask.CollectiontaskTest('test_collectiontask_post'))
 suite.addTest(test_collectiontask.CollectiontaskTest('test_collectiontask_put'))
-suite.addTest(test_collectiontask.CollectiontaskTest('test_collectiontask_delete'))'''
+suite.addTest(test_collectiontask.CollectiontaskTest('test_collectiontask_delete'))
+
+suite.addTest(test_customertypes1.Customertypes1Test('test_customertypes1_get'))
+
+suite.addTest(test_destricts1.Destricts1Test('test_destricts1_get'))
+
+suite.addTest(test_planreports.PlanreportsTest('test_planreports_get'))'''
+
+'''suite.addTest(test_vehiclemaintenance.VehiclemaintenanceTest('test_vehiclemaintenance_get'))
+suite.addTest(test_vehiclemaintenance.VehiclemaintenanceTest('test_vehiclemaintenance_post'))
+suite.addTest(test_vehiclemaintenance.VehiclemaintenanceTest('test_vehiclemaintenance_put'))
+suite.addTest(test_vehiclemaintenance.VehiclemaintenanceTest('test_vehiclemaintenance_delete'))
+suite.addTest(test_vehiclemaintenance.VehiclemaintenanceTest('test_vehiclemaintenance_export_get'))'''
+
+'''suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_get'))
+suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_post'))
+suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_put'))
+suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_delete'))
+suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_export_get'))'''
+
+suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_month_get'))
+suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_export_month_get'))
 
 
 
@@ -93,14 +127,26 @@ suite.addTest(test_employees.EmployeesTest('test_employees_RFID_delete'))
 suite.addTest(test_vehicles1.VehiclesTest1('test_vehicles_get'))
 suite.addTest(test_vehicles1.VehiclesTest1('test_vehicle_RFID_post'))
 suite.addTest(test_vehicles1.VehiclesTest1('test_vehicle_RFID_delete'))'''
-suite.addTest(test_customers1.CustomersTest1('test_customers_get'))
+'''suite.addTest(test_customers1.CustomersTest1('test_customers_get'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_post'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_id_get'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_put'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_RFID_post'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_RFID_delete'))
 suite.addTest(test_customers1.CustomersTest1('test_customers_uploadimages_post'))
-suite.addTest(test_customers1.CustomersTest1('test_customers_delete'))
+suite.addTest(test_customers1.CustomersTest1('test_customers_delete'))'''
+
+#手云端api测试
+'''suite.addTest(test_auth2.Auth2Test('test_auth2_post'))
+#suite.addTest(test_auth2.Auth2Test('test_auth2_get'))
+suite.addTest(test_auth2.Auth2Test('test_auth2_logout_post'))
+
+suite.addTest(test_fuelrecord.FuelrecordTest('test_fuelrecord_post'))
+
+suite.addTest(test_vehicleinspection.VehicleinspectionTest('test_vehicleinspection_inspectionform_post'))
+suite.addTest(test_vehicleinspection.VehicleinspectionTest('test_vehicleinspection_get'))'''
+
+
 
 
 

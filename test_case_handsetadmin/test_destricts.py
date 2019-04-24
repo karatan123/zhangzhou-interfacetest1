@@ -17,7 +17,7 @@ token = ''
 class DestrictsTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        print("行政区测试开始")
+        print("手持机管理端行政区测试开始")
         #     获取权限
         url = "http://recycling.3po-dwm.com:7777/api/auth"
         body = {
@@ -59,7 +59,7 @@ class DestrictsTest(unittest.TestCase):
 
     @classmethod
     def tearDownClass(self):
-            print(u"自动测试完毕！")
+            print(u"手持机管理端行政区测试完毕！")
 
 # 运行单个python文件会需要
 if __name__ == "__main__":
