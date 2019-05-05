@@ -21,6 +21,7 @@ from test_case_backend import test_planreports
 from test_case_backend import test_vehiclemaintenance
 from test_case_backend import test_vehicleupkeep
 from test_case_backend import test_reportvehicleinspection
+from test_case_backend import test_customerscount
 
 from test_case_handsetadmin import test_auth1
 from test_case_handsetadmin import test_RFID
@@ -68,14 +69,24 @@ suite.addTest(test_vehicles.Vehicles_Test('test_vehicles_put'))
 suite.addTest(test_vehicles.Vehicles_Test('test_vehicle_delete'))
 
 suite.addTest(test_appversionmanagement.AppversionmanagementTest('test_appversionmanangement_post'))
-suite.addTest(test_appversionmanagement.AppversionmanagementTest('test_appversionmanagement_get'))
+suite.addTest(test_appversionmanagement.AppversionmanagementTest('test_appversionmanagement_get'))'''
+
 suite.addTest(test_customers.CustomersTest('test_customers_get'))
 suite.addTest(test_customers.CustomersTest('test_customers_post'))
+suite.addTest(test_customers.CustomersTest('test_customers_byid_get'))
+suite.addTest(test_customers.CustomersTest('test_customers_location_put'))
+suite.addTest(test_customers.CustomersTest('test_customers_subcustomer_post'))
 suite.addTest(test_customers.CustomersTest('test_customers_put'))
 suite.addTest(test_customers.CustomersTest('test_customers_separatepost'))
+suite.addTest(test_customers.CustomersTest('test_customers_leavecluster_put'))
+suite.addTest(test_customers.CustomersTest('test_customers_joincluster_put'))
 suite.addTest(test_customers.CustomersTest('test_customer_delete'))
-
-suite.addTest(test_collectionplans.CollectionplansTest('test_collectionplans_get'))
+suite.addTest(test_customers.CustomersTest('test_customers_exeptions_get'))
+suite.addTest(test_customers.CustomersTest('test_customers_reportbymonthandstreet_get'))
+suite.addTest(test_customers.CustomersTest('test_customers_addvirtualtask_post'))
+suite.addTest(test_customers.CustomersTest('test_customers_updatetask_put'))
+suite.addTest(test_customers.CustomersTest('test_customers_virtualtaskbyid_delete'))
+'''suite.addTest(test_collectionplans.CollectionplansTest('test_collectionplans_get'))
 suite.addTest(test_collectionplans.CollectionplansTest('test_collectionplans_post'))
 suite.addTest(test_collectionplans.CollectionplansTest('test_collectionplans_routes_post'))
 suite.addTest(test_collectionplans.CollectionplansTest('test_collectionplans_routesupdate_patch'))
@@ -110,10 +121,11 @@ suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_put'))
 suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_delete'))
 suite.addTest(test_vehicleupkeep.VehicleupkeepTest('test_vehicleupkeep_export_get'))'''
 
-suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_month_get'))
-suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_export_month_get'))
+'''suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_month_get'))
+suite.addTest(test_reportvehicleinspection.ReportvehicleinspectionTest('test_reportvehicleinspection_export_month_get'))'''
 
-
+'''suite.addTest(test_customerscount.CustomerscountTest('test_customerscount_byidanmonth_get'))
+suite.addTest(test_customerscount.CustomerscountTest('test_customerscount_exportbyidandmonth_get'))'''
 
 # 手持机管理端api测试
 '''suite.addTest(test_auth1.Auth1Test('test_auth_post'))

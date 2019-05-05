@@ -14,18 +14,18 @@ import requests
 import time
 
 token = ''
-class ReportvehicleinspectionTest(unittest.TestCase):
+class CustomerscountTest(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        print("后端出车检查相关报表测试开始")
+        print("后端收运单位统计接口测试开始")
         #     获取权限
         url = "http://recycling.3po-dwm.com:8888/api/auth"
         body = {
             "password": "123456",
-            "username": "zhangzhou6605"
+            "username": "zhangzhou1012"
         }
         headers = {
-            'accept': 'application/json',
+            'accept': '*/*',
             'Content-Type': 'application/json'
         }
         response = requests.post(url, '', body, headers=headers)
@@ -38,48 +38,38 @@ class ReportvehicleinspectionTest(unittest.TestCase):
         token = s1["data"]["token"]
         print(token)
 
-
-#获取出车检查分页数据
-    def test_reportvehicleinspection_month_get(self):
+    #根据收运单位id和月份查询收运明细
+    def test_customerscount_byidanmonth_get(self):
+        customerid = "201825"
         month = "2019-04"
-        url = "http://recycling.3po-dwm.com:8888/api/reports/vehicleInspection/" + month
-        data = {
-            'page': 1,
-            'size': 20
-        }
+        url = "http://recycling.3po-dwm.com:8888/api/customerCounts/" + customerid + "/" + month
         headers = {
-            'accept': 'application/json',
+            'accept': '*/*',
             "Authorization": "Bearer " + token
         }
-        response = requests.get(url, params=data, headers=headers)
+        response = requests.get(url,headers=headers)
         print(response.url)
+        print(response.json())
         print(response.headers)
         self.assertEqual(response.status_code, 200)
 
-#导出出车检查分页数据
-    def test_reportvehicleinspection_export_month_get(self):
+    #导出收运单位当月的收运明细
+    def test_customerscount_exportbyidandmonth_get(self):
+        customerid = "201825"
         month = "2019-04"
-        url = "http://recycling.3po-dwm.com:8888/api/reports/vehicleInspection/export/" + month
-        data = {
-            'page': 1,
-            'size': 20
-        }
+        url = "http://recycling.3po-dwm.com:8888/api/customerCounts/export/" + customerid + "/" + month
         headers = {
-            'accept': 'application/json',
+            'accept': 'application/pdf',
             "Authorization": "Bearer " + token
         }
-        response = requests.get(url, params=data, headers=headers)
+        response = requests.get(url, headers=headers)
         print(response.url)
         print(response.headers)
         self.assertEqual(response.status_code, 200)
-
-
-
-
 
     @classmethod
     def tearDownClass(self):
-            print(u"后端出车检查相关报表测试开始！")
+            print(u"后端收运单位统计接口测试完毕！")
 
 # 运行单个python文件会需要
 if __name__ == "__main__":
